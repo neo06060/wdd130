@@ -1,15 +1,14 @@
 main {
-    max-width: 840px; 
+    max-width: 840px;
     margin: 0 auto;
 }
 
-
 aside {
-    margin: 1em; 
-    border: 1px solid rgba(0, 0, 0, 0.2); 
-    padding: 1em; 
-    background-color: #ffffff; 
-    color: #333; 
+    margin: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    background-color: #ffffff;
+    color: #333;
 }
 
 aside img {
@@ -23,12 +22,12 @@ main img {
 }
 
 main p {
-    padding: 0; 
+    padding: 0;
 }
-
 
 footer {
-    margin-top: 1em; 
-    border-top: 1px solid #000; 
-    text-align: center; 
+    margin-top: 1em;
+    border-top: 1px solid #000;
+    text-align: center;
 }
+
