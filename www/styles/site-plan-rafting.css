@@ -1,49 +1,33 @@
-
-@import url('https://fonts.googleapis.com/css?family=YourHeadingFont|YourParagraphFont');
+@import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Open+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap');
 
 
 :root {
   --primary-color: #396e94;
+  --rafting-color: #ffffff;
   --secondary-color: #e7c24f;
-  --accent1-color: #a43312;
+  --accent1-color: #453588;
   --accent2-color: #381d2a;
-  --heading-font: 'YourHeadingFont', serif;
-  --paragraph-font: 'YourParagraphFont', serif;
   --nav-background-color: #396e94;
   --nav-link-color: #fff;
   --nav-hover-link-color: #e7c24f;
   --nav-hover-background-color: #381d2a;
 }
 
-
-body {
-  font-family: var(--paragraph-font);
-  max-width: 960px;
-  padding: 20px;
-}
-
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-
-
-header {
-  padding: 20px;
-  background-color: var(--accent1-color);
-}
-
-
-p {
-  padding: 25px;
-}
-
-
+/* Navigation styles */
 nav {
   background-color: var(--nav-background-color);
   font-size: 1.2rem;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20px;
+  margin: 0;
+}
+
+.nav-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav a {
@@ -53,13 +37,90 @@ nav a {
   padding: 1rem;
 }
 
-
-nav a:link, nav a:visited {
+nav a:link,
+nav a:visited {
   color: var(--nav-link-color);
 }
-
 
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.logo-container span {
+  color: var(--rafting-color);
+  font-family: 'Montserrat', sans-serif; 
+  font-size: x-large;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif; 
+  max-width: 960px;
+  padding: 20px;
+  line-height: 1.4;
+}
+
+
+header {
+  padding: 10px;
+  background-color: var(--accent1-color);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', serif; 
+  color: var(--primary-color);
+}
+
+h3, h4 {
+  margin-top: 10px;
+}
+
+
+ul, p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+
+p {
+  padding: 25px;
+}
+
+span.r1 {
+  font-family: 'Montserrat', sans-serif; 
+  font-size: xx-large;
+}
+
+
+.color-palette {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.color-box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: 7px solid black;
 }
