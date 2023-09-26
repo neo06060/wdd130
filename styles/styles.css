@@ -80,4 +80,8 @@
     border-top: 1px solid #000;
     text-align: center;
   }
-  
+ aside h2 {
+    width: 200px;
+    height: auto;
+    position: absolute;
+}
