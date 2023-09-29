@@ -72,6 +72,23 @@ footer {
     padding: 10px 0;
 }
 
+.social-links {
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+}
+
+.social-links a {
+    text-decoration: none;
+    margin: 0 10px; /* Add some horizontal spacing between links */
+}
+
+.social-links img {
+    display: block;
+    width: 20px; 
+    height: 20px;
+}
+
+
 footer p {
     font-size: 0.9rem;
     color: #888;
