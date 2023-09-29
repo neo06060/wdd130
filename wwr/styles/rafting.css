@@ -19,9 +19,14 @@ h1, h2, p {
 
 .social-links a {
     text-decoration: none;
-    max-width: 15px;
+    width: 30px; 
+    height: 30px; 
 }
 
+.social-links img {
+    display: block;
+    margin: 0 auto;
+}
 
 body {
     max-width: 1200px;
