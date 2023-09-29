@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Your+Selected+Font');
 
-
 :root {
     --primary-color: #0077b6;
     --secondary-color: #00a8e8;
@@ -10,29 +9,26 @@
     --article-bg-color: rgba(255, 255, 255, 0.8);
 }
 
-
 h1, h2, p {
     font-family: 'Your Selected Font', sans-serif;
     color: var(--text-color);
 }
 
-
 .social-links a {
     text-decoration: none;
-    width: 30px; 
-    height: 30px; 
 }
 
 .social-links img {
     display: block;
     margin: 0 auto;
+    width: 20px; 
+    height: 20px; 
 }
 
 body {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 .hero {
     position: relative;
