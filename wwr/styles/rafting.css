@@ -3,7 +3,7 @@
 :root {
     --primary-color: #0077b6;
     --secondary-color: #00a8e8;
-    --text-color: #333;
+    --text-color: #334;
     --footer-bg-color: #f4f4f4;
     --article-bg-color: rgba(255, 255, 255, 0.8);
     --nav-background-color: #396e94; 
@@ -121,5 +121,3 @@ footer {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
-
-
