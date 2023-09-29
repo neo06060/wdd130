@@ -19,6 +19,7 @@ h1, h2, p {
 
 .social-links a {
     text-decoration: none;
+    max-width: 15px;
 }
 
 
