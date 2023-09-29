@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Your+Selected+Font');
 
 :root {
@@ -7,6 +6,7 @@
     --text-color: #333;
     --footer-bg-color: #f4f4f4;
     --article-bg-color: rgba(255, 255, 255, 0.8);
+    --nav-background-color: #396e94; /* Added navigation background color */
 }
 
 h1, h2, p {
@@ -45,16 +45,15 @@ body {
     font-size: 3rem;
     color: #fff;
     position: absolute;
-    top: 20%; /* Move the text higher in the hero section */
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.7);
     padding: 15px 30px;
     border-radius: 5px;
-    opacity: 1; /* Set opacity to 1 to make it fully opaque */
+    opacity: 1;
 }
 
-/* Adjust the positioning of the article if needed */
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -72,8 +71,6 @@ body {
     height: auto;
     margin: 10px;
 }
-
-
 
 footer {
     background-color: var(--footer-bg-color);
@@ -97,9 +94,32 @@ footer {
     height: 20px;
 }
 
-
-footer p {
-    font-size: 0.9rem;
-    color: #888;
+.nav-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    list-style: none; 
+    padding: 0; 
+    flex-grow: 1; 
+    background-color: var(--nav-background-color); 
 }
+
+.nav-container ul {
+    display: flex; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: var(--nav-link-color);
+    padding: 1rem;
+}
+
+.nav-container a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
 
