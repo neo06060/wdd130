@@ -1,7 +1,7 @@
-/* Import Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Your+Selected+Font');
 
-/* Define CSS variables for colors */
+
 :root {
     --primary-color: #0077b6;
     --secondary-color: #00a8e8;
@@ -10,24 +10,24 @@
     --article-bg-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Apply styles to headings and paragraphs */
+
 h1, h2, p {
     font-family: 'Your Selected Font', sans-serif;
     color: var(--text-color);
 }
 
-/* Remove underlines from social media links */
+
 .social-links a {
     text-decoration: none;
 }
 
-/* Limit the width of the page */
+
 body {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Style the Hero Container */
+
 .hero {
     position: relative;
 }
@@ -63,7 +63,7 @@ body {
     margin: 10px;
 }
 
-/* Style the footer */
+
 footer {
     background-color: var(--footer-bg-color);
     text-align: center;
@@ -75,4 +75,3 @@ footer p {
     color: #888;
 }
 
-/* Add additional styles as needed */
