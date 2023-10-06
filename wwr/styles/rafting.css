@@ -121,3 +121,28 @@ footer {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
+
+.adventures-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 -10px;
+}
+
+.adventures-container figure {
+    flex-basis: calc(20% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+
+.adventures-container img {
+    width: 100%;
+    height: auto;
+}
+
+.adventures-container figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
