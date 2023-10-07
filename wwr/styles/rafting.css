@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Your+Selected+Font');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
 
 :root {
     --primary-color: #0077b6;
@@ -10,9 +10,11 @@
 }
 
 h1, h2, p {
-    font-family: 'Your Selected Font', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: var(--text-color);
 }
+
+
 
 .social-links a {
     text-decoration: none;
