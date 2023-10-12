@@ -115,14 +115,10 @@ footer {
 
 .nav-container a {
     text-decoration: none;
-    color: var(--nav-link-color);
     padding: 1rem;
 }
 
-.nav-container a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
-}
+
 
 .adventures-container {
     display: flex;
@@ -205,8 +201,7 @@ fieldset {
 }
 
 fieldset label {
-    display: flex;
-    align-items: right; 
+    display: flex; 
     margin: 10px 0;
 }
 
