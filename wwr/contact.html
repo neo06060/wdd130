@@ -34,54 +34,58 @@
             </address>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-86.123456!3d39.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f0!3m2!1m1!1s0x0:0x0!5zQ8OvY2vEsE1!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
-
-        <section>
-            <h2>Employee Profiles</h2>
-            <div class="employee-container">
-                <!-- Employee profiles here -->
-            </div>
-        </section>
-
+        <div class="employee-container">
+            <figure>
+                <img src="images/tontopeo1.jpg" alt="Employee 1">
+                <figcaption>John Doe<br>Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/tontapeo2.png" alt="Employee 2">
+                <figcaption>Jane Smith<br>Adventure Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/caranchoa3.jpg" alt="Employee 3">
+                <figcaption>Bob Johnson<br>Customer Support</figcaption>
+            </figure>
+        </div>        
         <section>
             <h2>Contact Us</h2>
             <div class="contact-box">
+                <form action="submit_contact.php" method="post">
+                    <div class="contact-left">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+            
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="contact-right">
+                        <fieldset>
+                            <legend>Purpose of Message:</legend>
+                            <label>
+                                <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
+                                General Inquiry
+                            </label>
+                            <label>
+                                <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
+                                Reservation Question
+                            </label>
+                            <label>
+                                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" required>
+                                Website Suggestion
+                            </label>
+                        </fieldset>                        
+                        <label for="subscribe">Subscribe to the monthly newsletter:</label>
+                        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
-            <div class="independent-container">
-                <div class="contact-left">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <div class="contact-right">
-                    <fieldset>
-                        <legend>Purpose of Message:</legend>
-                        <label>
-                            <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
-                            General Inquiry
-                        </label>
-                        <label>
-                            <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
-                            Reservation Question
-                        </label>
-                        <label>
-                            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" required>
-                            Website Suggestion
-                        </label>
-                    </fieldset>
-
-                    <label for="subscribe">Subscribe to the monthly newsletter:</label>
-                    <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-                </div>
-                <button type="submit">Submit</button>
-            </div>
-        </section>
+        </section> 
     </main>
-
     <footer>
         <p>&#169; 2023 White Water Rafting Company | Saúl Carracelas</p>
         <nav class="social-links">
@@ -98,3 +102,4 @@
     </footer>
 </body>
 </html>
+
