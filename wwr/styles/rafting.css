@@ -148,3 +148,112 @@ footer {
     margin-top: 10px;
     font-weight: bold;
 }
+
+.employee-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 -10px;
+}
+
+.employee-container figure {
+    flex-basis: calc(30% - 20px);
+    margin: 10px;
+    text-align: center;
+}
+
+.employee-container img {
+    width: 100%;
+    height: auto;
+}
+
+.employee-container figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+.contact-box h2 {
+    font-size: 1.5rem; 
+}
+.contact-left,
+.contact-right {
+    flex-basis: 100%; 
+}
+
+.contact-left label,
+.contact-left input,
+.contact-left textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.contact-right fieldset {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.contact-right fieldset legend {
+    font-weight: bold;
+}
+
+.contact-right label {
+    display: block;
+    margin: 10px 0;
+}
+
+.contact-right input[type="checkbox"] {
+    float: right;
+    margin-left: 10px;
+    margin-top: -26px;
+}
+.independent-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 30%; 
+}
