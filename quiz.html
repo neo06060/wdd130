@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/quiz.css">
+    <title>HTML and CSS Quiz</title>
+</head>
+<body>
+    <h1>HTML and CSS Quiz</h1>
+    <form id="quiz-form" action="submit_quiz.php" method="post">
+        <div class="question">
+            <label for="q1">Question 1: What does HTML stand for?</label>
+            <input type="text" id="q1" name="q1" required>
+        </div>
+        <div class="question">
+            <label for="q2">Question 2: Explain the purpose of CSS.</label>
+            <textarea id="q2" name="q2" rows="4" required></textarea>
+        </div>
+        <div class="question">
+            <label for="q3">Question 3: What does CSS select with the selector "p.intro"?</label>
+            <select id="q3" name="q3" required>
+                <option value="" selected disabled>Choose One ...</option>
+                <option value="a">All elements with class "intro"</option>
+                <option value="b">The first paragraph element in the document</option>
+                <option value="c">All paragraph elements</option>
+            </select>
+        </div>
+        <div class="question">
+            <label for="q4">Question 4: How do you set the font size in CSS?</label>
+            <input type="number" id="q4" name="q4" required>
+        </div>
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+</html>
