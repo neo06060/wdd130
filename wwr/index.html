@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafting Adventures - Home</title>
+    <meta name="description" content="Experience the thrill of white water rafting with us. Sign up for our newsletter and explore our exciting trips.">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <style>
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .grid-item {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .grid-item img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/rapids.jpeg" alt="Rafting Company Logo">
+        </div>
+        <nav class="nav-container"> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 onclick="toggleNewsletterForm()">Newsletter Sign-Up</h2>
+            <form action="subscribe.php" method="post" id="newsletterForm" style="display: none;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    
+        <section class="cta">
+            <h2>Ready for an Adventure?</h2>
+            <p>Explore our exciting trips and plan your adventure today. <a href="trips.html" class="cta-button">Explore Trips</a></p>
+        </section>
+        <section class="grid">
+            <div class="grid-item">
+                <img src="images/canoas.png" alt="Purpose Image 1">
+                <h3>Our Purpose</h3>
+                <p>Discover our mission to provide thrilling and safe rafting experiences.</p>
+            </div>
+    
+            <div class="grid-item">
+                <img src="images/riotowapo2.jpg" alt="Offering Image 1">
+                <h3>Our Offerings</h3>
+                <p>Explore our range of trips, from beginner-friendly to advanced adventures.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/montañitabonita.png" alt="Purpose Image 2">
+                <h3>Our Vision</h3>
+                <p>Experience the beauty of nature and the adrenaline of rafting combined in one unforgettable journey.</p>
+            </div>
+        </section>
+    </main>
+    <script>
+function toggleNewsletterForm() {
+    var form = document.getElementById("newsletterForm");
+    if (form.style.display === "none" || form.style.display === "") {
+        form.style.display = "block"; 
+    } else {
+        form.style.display = "none";
+    }
+}
+    </script>
+    <footer>
+        <p>&copy; 2023 Rafting Adventures</p>
+        <div class="social-links">
+            <a href="https://facebook.com" class="icon-facebook">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" class="icon-twitter">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" class="icon-instagram">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
